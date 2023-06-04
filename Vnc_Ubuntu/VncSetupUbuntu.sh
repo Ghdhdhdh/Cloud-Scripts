@@ -8,7 +8,7 @@ sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-termi
 vncserver :1
 
 # Edit Config File\
-curl -L https://raw.githubusercontent.com/Ghdhdhdh/Cloud-Scripts/main/VncConf.sh
+wget https://raw.githubusercontent.com/Ghdhdhdh/Cloud-Scripts/main/VncConf.sh
 
 cat VncConf.sh > ~/.vnc/xstartup
 
