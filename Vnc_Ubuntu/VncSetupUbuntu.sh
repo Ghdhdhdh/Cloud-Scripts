@@ -8,5 +8,12 @@ sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-termi
 vncserver :1
 
 # Edit Config File\
-curl -L
-# ~/.vnc/xstartup
+curl -L https://raw.githubusercontent.com/Ghdhdhdh/Cloud-Scripts/main/VncConf.sh
+
+cat VncConf.sh > ~/.vnc/xstartup
+
+#Restart
+vncserver -kill :1
+
+vncserver :1
+echo "Vnc Server Live at $(curl ifconfig.me)"
